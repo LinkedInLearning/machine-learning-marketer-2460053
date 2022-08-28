@@ -42,14 +42,12 @@ numbers, e.g. 3.7.1, but you can ignore the third number; 3.7.1 suffices for 3.7
     - A helpful package manager for installing Python on Windows is chocolatey. You can install it using the
       instructions [here](https://chocolatey.org/install) (be sure to run the terminal as an administrator, as they
       say).
-    - Then you can use chocolatey to set up Python. Either use ```choco install python --version=3.8.0``` (recommended) 
+    - Then you can use chocolatey to set up Python. Either use ```choco install python --version=3.8.13``` (recommended) 
   or ```choco install python```, which will install whatever the current latest version of Python is.
 
 How to figure out which (if any) Python version you have:
 
-- Mac users: Type ```which python```
-- Windows users: Type ```python```. A Python console will open up within your terminal with a heading describing the
-  version, e.g. 3.7. Type quit() to get out of the Python console.
+- Type ```python --version```.
 
 If you have anything other than 3.7, 3.8 or 3.9, you may wish to install one of these versions using the instructions
 listed above.
@@ -107,7 +105,7 @@ it in the last step).
 
 ```bash
 cd Documents/ml_in_marketing # Navigate to the folder you want to work in (skip this if you already did it)
-pip3 install pipenv # You need only do this once; in future if you're starting new projects with new virtual environments, you can skip this line
+pip3 install pipenv # (or pip install ...) You need only do this once; in future if you're starting new projects with new virtual environments, you can skip this line
 pipenv install --python=3.8 -r requirements.txt
 ```
 
