@@ -3,21 +3,21 @@
 <!-- TOC -->
 
 * [Anleitung für Einsteiger](#fr-einsteiger)
-    * [Der Kursmaterialien Herunterladen](#der-kursmaterialien-herunterladen)
+    * [Kursmaterialien Herunterladen](#kursmaterialien-herunterladen)
     * [Python Installieren](#python-installieren)
     * [Eine Interactive Development Environment Installieren (Optional)](#eine-interactive-development-environment-installieren-optional)
     * [Ein Terminal öffnen und zu den Kursdateien Navigieren](#ein-terminal-ffnen-und-zu-den-kursdateien-navigieren)
     * [Einer virtuellen Umgebung (Virtual Environment) Erstellen](#einer-virtuellen-umgebung-virtual-environment-erstellen)
-    * [Die Virtuelle Umgebung Aktivieren und Jupyter Notebooks Starten](#die-virtuelle-umgebung-aktivieren-und-jupyter-notebooks-starten)
+    * [Virtuelle Umgebung Aktivieren und Jupyter Notebooks Starten](#virtuelle-umgebung-aktivieren-und-jupyter-notebooks-starten)
 * [Anleitung für Fortgeschrittene](#anleitung-fr-fortgeschrittene-setzt-voraus-dass-sie-python-und-git-bereits-installiert-haben)
-    * [Der Kursmaterialien Herunterladen oder Klonen ](#der-kursmaterialien-herunterladen-oder-klonen)
+    * [Kursmaterialien Herunterladen oder Klonen ](#kursmaterialien-herunterladen-oder-klonen)
     * [Eine virtuelle Umgebung Erstellen und Dependencies Installieren, und Jupyter Notebooks Starten](#eine-virtuelle-umgebung-erstellen-und-dependencies-installieren-und-jupyter-notebooks-starten)
 
 <!-- TOC -->
 
 # Anleitung für Einsteiger
 
-### Der Kursmaterialien Herunterladen
+### Kursmaterialien Herunterladen
 
 - Gehen Sie nach [GitHub] (https://github.com/LinkedInLearning/machine-learning-marketer-2460053), klicken Sie auf den 
   grünen 'Code' und wählen Sie 'ZIP herunterladen'.
@@ -45,14 +45,12 @@ geben, wenn Sie andere Python-Versionen verwenden. (Beachten Sie, dass Python-Ve
   der Anweisungen [hier](https://chocolatey.org/install) installieren (stellen Sie sicher, dass Sie das Terminal als 
   Administrator ausführen, wie es in der Anleitung heißt).
     - Dann können Sie chocolatey verwenden, um Python einzurichten. Verwenden Sie entweder
-  ```choco install python --version=3.8.0``` (empfohlen) oder ```choco install python```, die die aktuellste Version von
+  ```choco install python --version=3.8.13``` (empfohlen) oder ```choco install python```, die die aktuellste Version von
   Python installiert.
 
 Wie Sie feststellen können, welche Python-Version Sie haben (wenn überhaupt):
 
-- Mac: Geben Sie ```which python``` ein
-- Windows: Geben Sie ```python``` ein. Es öffnet sich eine Python-Konsole in Ihrem Terminal mit einer Überschrift, die
-die Version, z.B. 3.7, angibt. Geben Sie quit() ein, um die Python-Konsole zu verlassen.
+- Geben Sie ```python --version``` ein.
 
 Wenn Sie eine andere Version als 3.7, 3.8 oder 3.9 haben, können Sie eine dieser Versionen mit Hilfe der oben 
 aufgeführten Anweisungen installieren oben aufgeführten Anweisungen installieren.
@@ -65,8 +63,7 @@ Startpunkt ist Visual Studio Code: Es ist kostenlos, schnell und hat eine große
 überwältigend sein könnte.
 
 Wenn Sie mit einer IDE arbeiten möchten (optional für den nächsten kleinen Schritt, aber ansonsten überhaupt nicht 
-erforderlich) und noch keine haben, dann schauen Sie bitte in den Online-Anleitungen für Ihre gewünschte IDE und Ihr 
-Betriebssystem nach.
+erforderlich) und noch keine haben, dann schauen Sie bitte in den Online-Anleitungen für Ihrer IDE nach.
 
 ### Ein Terminal öffnen und zu den Kursdateien Navigieren
 
@@ -78,10 +75,10 @@ Je nachdem, ob Sie sich für eine IDE entschieden haben oder nicht, gibt es zwei
 im Internet nach der Verknüpfung für Ihr Betriebssystem suchen). Alternativ dazu können Sie Visual Studio Code öffnen 
 und auf die Schaltfläche "Terminal" (in der oberen Menüleiste) klicken und "Neues Terminal" wählen.
 
-Navigieren Sie zu dem Ort, an dem die Kursdateien gespeichert sind: Geben Sie dazu ```cd`` ein, gefolgt von einem 
+Navigieren Sie zu dem Ort, an dem die Kursdateien gespeichert sind: Geben Sie dazu `cd` ein, gefolgt von einem 
 Leerzeichen und dem Pfad zu dem Ordner, in dem die Dateien gespeichert sind. Der Pfad besteht aus allen Ordnern 
-zwischen dem Ort, an dem Sie sich befinden, und dem Ort, zu dem Sie gehen müssen, getrennt durch einen / Schrägstrich 
-(Mac/Linux) oder einen \ Schrägstrich (Windows). Das Beispiel im nächsten Schritt geht davon aus, dass ich unter Mac OS 
+zwischen dem Ort, an dem Sie sich befinden, und dem Ort, zu dem Sie gehen müssen, getrennt durch einen `/` Slash
+(Mac/Linux) oder einen `\` Backslash (Windows). Das Beispiel im nächsten Schritt geht davon aus, dass ich unter Mac OS 
 arbeite und mein Terminal mein Benutzerverzeichnis "munro" öffnet, und dass sich in diesem Verzeichnis ein Ordner 
 "Dokumente" befindet, in dem sich der Ordner mit den Kursmaterialien befindet. Sie müssen den Pfad entsprechend 
 anpassen, und Sie sollten so lange navigieren bis zu dem Ordner, der die Datei "requirements.txt" enthält. Auch hier 
@@ -93,7 +90,7 @@ Starten Sie die IDE Ihrer Wahl. Ich verwende PyCharm für diese Anleitung, aber 
 ähnlich sein.
 
 Wählen Sie "Datei" > "Öffnen" > navigieren Sie zu dem Ordner, der die Kursmaterialien enthält, z. B. "requirements.txt",
-und klicken Sie auf "Öffnen". Wenn PyCharm Sie fragt, ob Sie dem Projekt vertrauen wollen, wählen Sie dies! Wenn PyCharm
+und klicken Sie auf "Öffnen". Wenn PyCharm Sie fragt, ob Sie dem Projekt vertrauen wollen, bestätigen sie dies! Wenn PyCharm
 Sie fragt, wo Sie das Projekt öffnen wollen, wählen Sie "Neues Fenster".
 
 Öffnen Sie ein Terminal innerhalb der IDE. Die Schaltfläche sollte sich entweder im Menü unten links oder im Menü oben 
@@ -116,13 +113,13 @@ erste Zeile überspringen, wenn Sie sie bereits im letzten Schritt ausgefüllt h
 
 ```bash
 cd Documents/ml_in_marketing # Navigieren zu dem Ordner mit den Kursunterlagen (nicht notwendig, wenn Sie es bereits getan haben).
-pip3 install pipenv # Sie müssen dies nur einmal tun; wenn Sie in Zukunft neue Projekte mit neuen virtuellen Umgebungen starten, können Sie diese Zeile überspringen
+pip3 install pipenv # (oder pip install ...), Sie müssen dies nur einmal tun; wenn Sie in Zukunft neue Projekte mit neuen virtuellen Umgebungen starten, können Sie diese Zeile überspringen
 pipenv install --python=3.8 -r requirements.txt
 ```
 
 Nun müssen Sie einige Augenblicke warten, bis die virtuelle Umgebung erstellt und die Abhängigkeiten installiert werden.
 
-### Die Virtuelle Umgebung Aktivieren und Jupyter Notebooks Starten
+### Virtuelle Umgebung Aktivieren und Jupyter Notebooks Starten
 
 Sobald der letzte Schritt abgeschlossen ist, sollten Sie 'Successfully created virtual environment!' sehen.
 
@@ -154,7 +151,7 @@ Strg+c im Terminal schließt ein Jupyter-Notizbuch (vergewissern Sie sich, dass 
 gespeichert haben!) Nach werden Sie aufgefordert, ```y`` einzugeben, um zu bestätigen, dass Sie das Notizbuch schließen 
 möchten.
 
-```deactivate``` verlassen Sie die virtuelle Umgebung und kehren in das System zurück. Sie können dann das Terminal 
+```deactivate``` verlassen Sie die virtuelle Umgebung und kehren in das System zurück. Sie können dann den Terminal 
 schließen.
 
 Wenn Sie später wieder anfangen wollen, öffnen Sie das Terminal (auf Ihrem Computer oder in der IDE), navigieren Sie zu 
@@ -162,7 +159,7 @@ dem Ort des Projekts, geben Sie ```pipenv shell``` und erneut ```jupyter noteboo
 
 # Anleitung für Fortgeschrittene (setzt voraus, dass Sie Python und Git bereits installiert haben)
 
-### Der Kursmaterialien Herunterladen oder Klonen
+### Kursmaterialien Herunterladen oder Klonen
 
 - Gehen Sie zu [GitHub] (https://github.com/LinkedInLearning/machine-learning-marketer-2460053) und klonen Sie das 
 Repository, oder laden Sie die Kursdateien herunter und entpacken Sie sie über die grüne Schaltfläche "Code".
@@ -191,7 +188,7 @@ deactivate # Die virtuelle Umgebung deaktivieren
 - Pipenv scannt automatisch Ihr System und findet die erste brauchbare Python-Version, z.B. 3.8.
 - Es gibt viele alternative Möglichkeiten, Python-Umgebungen zu verwalten:
     - conda (Anaconda, miniforge) oder mamba (schnellerer conda). Diese installieren strengere Binärdateien und arbeiten
-  in der Regel zuverlässig, sind aber größer und langsamer
+  in der Regel zuverlässiger, sind aber langsamer (beim installierren) und brauchen mehr Speicherplatz 
       - virtualenv über verschiedene Hilfsskripte, die dasselbe tun wie pipenv, aber weniger intuitiv sind. Unten ist 
       ein Beispiel:
 
