@@ -12,9 +12,9 @@ Bitte lesen Sie entweder readme-deutsch.md oder readme-english.md für eine voll
 
 ### Autor
 
-**[Katherine Munro]**
+**Katherine Munro**
 
-_[Data Scientist (Datenwissenschaftlerin)]_
+_Data Scientist (Datenwissenschaftlerin)_
 
 Sehen Sie sich andere Kurse des Autors auf [LinkedIn Learning](https://www.linkedin.com/learning/instructors/katherine-munro) an.
 
